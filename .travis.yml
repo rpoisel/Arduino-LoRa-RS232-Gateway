@@ -34,5 +34,6 @@ install:
     - platformio update
 
 script:
-    - platformio run
+    - platformio run -v -e adafruit_feather_m0 -e nanoatmega328
+    - platformio test -v -e native
 
